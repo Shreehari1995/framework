@@ -6,6 +6,7 @@ class SeleniumCore:
     def __init__(self, setup):
         self.driver = setup
 
+    #  asdfghjkl;cvbnm,
     def get_element(self, loc_type, loc_value):
         return self.driver.find_element(loc_type, loc_value)
 
