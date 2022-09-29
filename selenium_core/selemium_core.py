@@ -19,3 +19,5 @@ class SeleniumCore:
     def move_to_the_element(self, loc_type, loc_value):
         element = self.get_element(loc_type, loc_value)
         ActionChains(self.driver).move_to_element(element)
+
+    #ngishdhpifvubapiubvpiuasbhvpihwuigf
