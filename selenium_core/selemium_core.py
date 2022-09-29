@@ -1,5 +1,5 @@
 import pytest
-from selenium.webdriver import ActionChains
+from selenuium.webdriver import ActionChains
 
 
 @pytest.mark.usefixtures("setup")
@@ -20,3 +20,9 @@ class SeleniumCore:
         ActionChains(self.driver).move_to_element(self.get_element(locator, by_type))
 
     #   kefghegfjergyugfhjehry
+
+    def move_to_the_element(self, loc_type, loc_value):
+        element = self.get_element(loc_type, loc_value)
+        ActionChains(self.driver).move_to_element(element)
+
+    #ngishdhpifvubapiubvpiuasbhvpihwuigf
